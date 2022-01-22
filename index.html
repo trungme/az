@@ -4,7 +4,8 @@
   Azota preview tool
   </title>
 </head>
-<body>
+<body>+
+  <div class='progress-container'> <div class='progress-bar' id='myBar'/> </div>
 <link rel="stylesheet" href="./style.css" />
 <h1><a href="https://e-vn.gq/">Công cụ xem đề bài trên Azota</a></h1>
     <div id="root-base">
@@ -20,6 +21,7 @@
     <div id="question-viewer">
     </div>
    <h3>Mọi thông tin liên hệ <a href="mailto:az@e-vn.gq">az@e-vn.gq</a>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<u><a href="https://e-vn.gq/">reset&nbsp;here</a></u>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</h3>
+  <script>window.onscroll = function() {myFunction()};function myFunction(){var winScroll = document.body.scrollTop || document.documentElement.scrollTop;var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;var scrolled = (winScroll / height) * 100;document.getElementById(&quot;myBar&quot;).style.width = scrolled + &quot;%&quot;;}</script>
    </body>
 <script src="./main.js"></script>
 <script src="./getQuestion.js"></script>
